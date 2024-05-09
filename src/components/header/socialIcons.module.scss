@@ -1,0 +1,7 @@
+.icon {
+  &:hover {
+    path:first-child {
+      fill: red;
+    }
+  }
+}
