@@ -13,3 +13,30 @@ Currently, two official plugins are available:
 
 https://www.crf.org/tct-2019/program/agenda/course-directors-faculty
 https://www.crf.org/tct-2019/program/agenda/tct-at-a-glance
+
+## Deploy
+
+
+## Github Pages
+
+Github pages automatically looks for an index.html. It's best to setup a deploy folder called dist/build
+
+Install the CLI this will handle authentication for you.
+https://github.com/cli/cli#installation
+
+We need to use this because the following command doesn't work with Github Desktop
+````
+git subtree push --prefix dist origin gh-pages
+````
+In this example dist is our directory
+
+### React
+
+in package.json set the prefix of your build files with
+````
+ "homepage": "https://gitname.github.io/react-gh-pages",
+````
+
+### Digital Ocean
+
+You need to configure App Settings -> App Spec
