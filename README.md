@@ -18,7 +18,16 @@ https://github.com/cli/cli#installation
  "homepage": "https://gitname.github.io/react-gh-pages",
 ````
 
-2. Create Subtree - 
+2. Vite config set base path to git subdirectory
+
+````
+export default defineConfig({
+
+    base: '/example/',
+})
+````
+
+3. Create Subtree  
 ````
 git subtree push --prefix dist origin gh-pages
 ````
@@ -26,7 +35,7 @@ git subtree push --prefix dist origin gh-pages
 If you get an error try removing "dist" from git ignore
 In this example dist is our directory
 
-3. Deploy on Github.com 
+4. Deploy on Github.com 
 In github.com > pages > select branch gh-pages
 
 
