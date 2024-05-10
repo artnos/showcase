@@ -28,6 +28,7 @@ We need to use this because the following command doesn't work with Github Deskt
 ````
 git subtree push --prefix dist origin gh-pages
 ````
+If you get an error try removing "dist" from git ignore
 In this example dist is our directory
 
 ### React
