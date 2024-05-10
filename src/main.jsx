@@ -2,14 +2,14 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App.jsx"
 import "./index.css"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, createHashRouter } from "react-router-dom"
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import Tct2024Register from "./pages/Tct2024Register"
 import Test from "./pages/Test.jsx"
 import Tct2024 from "./pages/Tct2024.jsx"
 import Faculty from "./pages/Faculty.jsx"
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <App />,
