@@ -31,6 +31,8 @@ git subtree push --prefix dist origin gh-pages
 If you get an error try removing "dist" from git ignore
 In this example dist is our directory
 
+Then in github.com > pages > select branch gh-pages
+
 ### React
 
 in package.json set the prefix of your build files with
